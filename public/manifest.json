@@ -1,0 +1,21 @@
+{
+  "name": "Stendly",
+  "short_name": "Stendly",
+  "description": "Crypto payment wallet",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0A0A0F",
+  "theme_color": "#0A0A0F",
+  "categories": [
+    "finance"
+  ],
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ]
+}

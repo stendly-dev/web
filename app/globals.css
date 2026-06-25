@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+    --font-sans: var(--font-sans);
+    --font-mono: var(--font-mono);
+}
+
+@layer base {
+    :root {
+        --bg-primary: #FFFFFF;
+        --bg-card: #F8F9FA;
+        --bg-elevated: #FFFFFF;
+        --text-primary: #0F172A;
+        --text-secondary: #64748B;
+        --text-hint: #94A3B8;
+        --border-subtle: #E2E8F0;
+        --accent-primary: #0F172A;
+        --accent-primary-text: #FFFFFF;
+        --accent-green: #00B894;
+        --accent-red: #FF6B6B;
+    }
+
+    .dark {
+        --bg-primary: #050507;
+        --bg-card: #0A0A0F;
+        --bg-elevated: #13131A;
+        --text-primary: #FFFFFF;
+        --text-secondary: #8888AA;
+        --text-hint: #555566;
+        --border-subtle: rgba(255, 255, 255, 0.1);
+        --accent-primary: #FFFFFF;
+        --accent-primary-text: #050507;
+        --accent-green: #00B894;
+        --accent-red: #FF6B6B;
+    }
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    overscroll-behavior: none;
+    overflow: hidden;
+}
+
+html {
+    overscroll-behavior: none;
+    overflow: hidden;
+}
+
+/* Переопределяем градиентные кнопки под новый строгий дизайн из index.html */
+.gradient-btn {
+    background: var(--accent-primary);
+    color: var(--accent-primary-text) !important;
+}
+
+.gradient-btn:hover {
+    opacity: 0.9;
+}
